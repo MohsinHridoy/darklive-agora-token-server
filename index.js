@@ -21,7 +21,7 @@ app.get("/rcttoken/host", (req, res) => {
   }
 
   const role = RtcRole.PUBLISHER; // Host
-  const expirationTimeInSeconds = 36; // 1 hour
+  const expirationTimeInSeconds = 14400; // ⏱ 4 hours (60*60*4)
   const currentTimestamp = Math.floor(Date.now() / 1000);
   const privilegeExpiredTs = currentTimestamp + expirationTimeInSeconds;
 
@@ -38,6 +38,8 @@ app.get("/rcttoken/host", (req, res) => {
     token: token,
     uid: uid,
     channel: channelName,
+      appId: APP_ID,
+
   });
 });
 
