@@ -33,13 +33,12 @@ app.get("/rcttoken/host", (req, res) => {
     role,
     privilegeExpiredTs
   );
-console.log("APP_ID:", APP_ID);
 
   return res.json({
     token: token,
     uid: uid,
     channel: channelName,
-    appId: 555555555555,
+    test: dsdsdsds
 
   });
 });
