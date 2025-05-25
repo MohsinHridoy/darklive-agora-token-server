@@ -33,6 +33,7 @@ app.get("/rcttoken/host", (req, res) => {
     role,
     privilegeExpiredTs
   );
+console.log("APP_ID:", APP_ID);
 
   return res.json({
     token: token,
