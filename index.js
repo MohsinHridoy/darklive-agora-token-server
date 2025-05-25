@@ -38,8 +38,8 @@ app.get("/rcttoken/host", (req, res) => {
     token: token,
     uid: uid,
     channel: channelName,
-    test: dsdsdsds
-
+    test: "dsdsdsds", // ✅ this will now work
+  appId: APP_ID,    // ✅ this helps you debug the real issue
   });
 });
 
