@@ -38,7 +38,7 @@ app.get("/rcttoken/host", (req, res) => {
     token: token,
     uid: uid,
     channel: channelName,
-      appId: APP_ID,
+    appId: 555555555555,
 
   });
 });
