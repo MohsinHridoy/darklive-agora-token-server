@@ -36,10 +36,10 @@ app.get("/rcttoken/host", (req, res) => {
 
   return res.json({
     token: token,
-    uid: uid,
-    channel: channelName,
-    test: "dsdsdsds", // ✅ this will now work
-  appId: APP_ID,    // ✅ this helps you debug the real issue
+  //   uid: uid,
+  //   channel: channelName,
+  //   test: "dsdsdsds", // ✅ this will now work
+  // appId: APP_ID,    // ✅ this helps you debug the real issue
   });
 });
 
